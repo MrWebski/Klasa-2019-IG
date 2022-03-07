@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+div {
+    margin: auto;
+    margin-top: 10px;
+    width: 750px;
+    padding: 20px;
+    border: 1px solid #000;
+    outline-style: dashed;
+    outline-color: aqua;
+    outline-offset: 5px;
+    outline-width: 5px;
+}
+
+button {
+    border: 1px solid black;
+    padding: 5px;
+    outline-style: inset;
+}

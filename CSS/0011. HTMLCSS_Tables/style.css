@@ -1,0 +1,48 @@
+body {
+    height: 100%;
+}
+
+table, td, th {
+    /* border: 1px solid black; */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 10px;
+}
+
+th {
+    height: 3em;
+    text-align: left;
+    vertical-align: bottom;
+}
+
+td {
+    font-size: 1em;
+    height: 1.5em;
+    text-align: center;
+}
+
+th, td {
+    padding: 10px;
+    /* border-bottom: 1px solid #ddd; */
+}
+
+tr:nth-child(even) {
+    background-color: #ccc;
+}
+
+tr:hover {
+    background-color: #999;
+}
+
+th {
+    background-color: #abc;
+}
+
+div {
+    overflow-x: auto;
+    overflow-y: auto;
+    height: 100%;
+}

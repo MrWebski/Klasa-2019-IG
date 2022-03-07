@@ -1,0 +1,23 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+div {
+    width: 80%;
+    margin: auto;
+    background-color: #ccc;
+}
+
+div > p {
+    padding: 10px;
+    text-indent: 50px;
+    text-shadow: 0 0 2px black;
+}
+
+#div02 {
+    text-align: center;
+    font-size: 2em;
+    padding: 20px;
+    text-shadow: -2px -2px 5px red, 2px 2px 5px blue;
+}

@@ -1,0 +1,106 @@
+nav {
+    background-color: #ccc;
+
+    > ul {
+        display: flex;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+
+        > li {
+            width: 20%;
+            text-align: center;
+
+            > a {
+                display: block;
+                padding: 15px;
+            }
+
+            > a:link {
+                text-decoration: none;
+            }
+
+            > a:hover {
+                background-color: #999;
+            }
+
+            > a:visited {
+                color: black;
+            }
+
+            > a:active {
+                color: chartreuse;
+            }
+        }
+    }
+}
+
+main {
+    display: flex;
+
+    > aside {
+        width: 20%;
+
+        > form {
+            text-align: center;
+
+            > input {
+                display: block;
+                padding: 5px;
+                margin: auto;
+                width: 90%;
+            }
+
+            > input:focus {
+                background-color: #0ff;
+            }
+        }
+    }
+
+    > article {
+        width: 80%;
+
+        > section {
+            > div {
+                text-align: justify;
+
+                // > :first-child {
+                //     color: #f00;
+                //     font-weight: bold;
+                // }
+
+                // > ::first-line {
+                //     font-variant: small-caps;
+                //     font-size: 1.5em;
+                // }
+            }
+
+            div:first-child {
+                color: #f00;
+                font-weight: bold;
+            }
+        
+            div::first-line {
+                font-variant: small-caps;
+                font-size: 1.5em;
+            }
+
+            div::first-letter {
+                font-size: 2em;
+            }
+
+            div::selection {
+                color: #00f;
+                background: #0ff;
+            }
+        }
+
+        > section::before {
+            content: url('./animal.png');
+        }
+
+        > section::after {
+            content: url('./avocado.png');
+        }
+    }
+}

@@ -1,0 +1,41 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+div {
+    margin: 5px;
+    padding: 10px;
+    font-size: 2em;
+}
+
+#div01 {
+    font-family: Arial;
+}
+#div02 {
+    font-family: Verdana;
+}
+#div03 {
+    font-family: Helvetica;
+}
+#div04 {
+    font-family: Tahoma;
+}
+#div05 {
+    font-family: 'Trebuchet MS';
+}
+#div06 {
+    font-family: 'Times New Roman';
+}
+#div07 {
+    font-family: Georgia;
+}
+#div08 {
+    font-family: Garamond;
+}
+#div09 {
+    font-family: Monospace;
+}
+#div10 {
+    font-family: 'Brush Script MT';
+}

@@ -1,0 +1,12 @@
+div {
+    background-color: #257313;
+    height: 200px;
+}
+
+div.klasa {
+    color: #f00;
+}
+
+.klasa {
+    color: #f0f;
+}

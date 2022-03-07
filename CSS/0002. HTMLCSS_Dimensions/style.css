@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    display: flex;
+}
+
+main > aside {
+    width: 20%;
+}
+
+main > article {
+    width: 80%;
+}
+
+section {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+section > div {
+    border: 1px solid;
+    width: 150px;
+    height: 50px;
+    margin: 20px;
+    overflow: auto;
+    resize: vertical;
+}

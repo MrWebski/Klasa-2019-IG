@@ -1,0 +1,35 @@
+div {
+    border: 2px solid #227799;
+    width: 50%;
+    margin: auto;
+    display: inline;
+}
+
+span {
+    border: 2px solid #227799;
+    width: 70%;
+    height: 120px;
+    display: block;
+}
+
+.none {
+    display: none;
+}
+
+.hide {
+    visibility: hidden;
+}
+
+a {
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    width: 150px;
+    font-weight: bold;
+    border: 1px solid #227799;
+    background-color: #4488ff;
+    color: #000;
+    text-decoration: none;
+    border-radius: 10px;
+    display: inline-block;
+}

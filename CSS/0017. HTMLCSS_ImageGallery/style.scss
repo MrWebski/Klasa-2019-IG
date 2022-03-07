@@ -1,0 +1,29 @@
+div.gallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+
+    > div.image {
+        width: 25%;
+        text-align: center;
+        
+        img {
+            width: 90%;
+            padding: 15px;
+            padding-bottom: 0;
+        }
+
+        span {
+            display: block;
+            text-align: center;
+            padding-bottom: 15px;
+        }
+
+        &:hover {
+            background-color: #0ff;
+            outline: 1px solid #f00;
+        }
+    }
+}

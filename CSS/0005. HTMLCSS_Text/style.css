@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: left;
+}
+
+div {
+    text-align: justify;
+    text-indent: 15px;
+    letter-spacing: 5px;
+    word-spacing: 5px;
+    line-height: 20px;
+    text-shadow: 0px 0px 5px red;
+}
+
+h2 {
+    text-align: center;
+    text-transform: lowercase;
+}
+
+h3 {
+    text-align: right;
+}

@@ -1,0 +1,46 @@
+html, body, img {
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.container {
+  position: relative;
+}
+
+.box01 {
+  position: relative;
+  border: 3px solid black;
+  height: 200px;
+  margin: 50px;
+  z-index: 1;
+}
+
+.box02 {
+  position: absolute;
+  background-color: #777;
+  color: aqua;
+  border: 1px dotted #55f;
+  height: 300px;
+  width: 50%;
+  top: 30px;
+  left: 20px;
+  z-index: 2;
+}
+
+.box03 {
+  position: absolute;
+  background-color: #4f4;
+  width: 70%;
+  height: 250px;
+  top: 70px;
+  left: 100px;
+  z-index: 3;
+}

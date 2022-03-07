@@ -1,0 +1,134 @@
+body, html {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+body {
+    box-sizing: border-box;
+
+    > header {
+        height: 200px;
+        line-height: 200px;
+
+        > h1 {
+            font-size: 1.5em;
+            text-align: center;
+        }
+    }
+
+    > nav {
+        > ul {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-content: center;
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+
+            > li {
+                width: 200px;
+
+                > div {
+                    background-color: #ccc;
+                    position: absolute;
+                    display: none;
+                    z-index: 9999999;
+                    width: 250px;
+
+                    > a {
+                        display: block;
+                        padding: 10px;
+
+                        &:hover {
+                            background-color: #888;
+                        }
+                    }
+                }
+
+                &:hover > div {
+                    display: block;
+                }
+
+                > a {
+                    display: block;
+                    padding: 25px;
+                    text-align: center;
+
+                    &:hover {
+                        background-color: #ccc;
+                    }
+
+                }
+            }
+        }
+    }
+
+    > main {
+        display: flex;
+        padding: 0;
+        margin: 0;
+
+        > aside {
+            width: 25%;
+            padding: 0;
+            margin: 0;
+
+            > ul {
+                display: flex;
+                flex-direction: column;
+                list-style-type: none;
+                padding: 5px;
+                margin: 0;
+
+                > li {
+                    > div {
+                        background-color: #ccc;
+                        position: absolute;
+                        display: none;
+                        z-index: 9999999;
+                        width: 20%;
+    
+                        > a {
+                            display: inline-block;
+                            padding: 10px;
+    
+                            &:hover {
+                                background-color: #888;
+                            }
+                        }
+                    }
+    
+                    &:hover > div {
+                        display: inline-block;
+                    }
+    
+                    > a {
+                        display: inline-block;
+                        padding: 15px;
+                        text-align: center;
+
+                        &:hover {
+                            background-color: #ccc;
+                        }
+                    }
+                }
+            }
+        }
+
+        > article {
+            padding: 5px;
+            width: 75%;
+
+            > section {
+                text-align: justify;
+            }
+        }
+    }
+}
+

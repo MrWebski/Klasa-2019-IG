@@ -1,0 +1,144 @@
+body, html {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body > header {
+  height: 200px;
+  line-height: 200px;
+}
+
+body > header > h1 {
+  font-size: 1.5em;
+  text-align: center;
+}
+
+body > nav > ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+body > nav > ul > li {
+  width: 200px;
+}
+
+body > nav > ul > li > div {
+  background-color: #ccc;
+  position: absolute;
+  display: none;
+  z-index: 9999999;
+  width: 250px;
+}
+
+body > nav > ul > li > div > a {
+  display: block;
+  padding: 10px;
+}
+
+body > nav > ul > li > div > a:hover {
+  background-color: #888;
+}
+
+body > nav > ul > li:hover > div {
+  display: block;
+}
+
+body > nav > ul > li > a {
+  display: block;
+  padding: 25px;
+  text-align: center;
+}
+
+body > nav > ul > li > a:hover {
+  background-color: #ccc;
+}
+
+body > main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+body > main > aside {
+  width: 25%;
+  padding: 0;
+  margin: 0;
+}
+
+body > main > aside > ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  list-style-type: none;
+  padding: 5px;
+  margin: 0;
+}
+
+body > main > aside > ul > li > div {
+  background-color: #ccc;
+  position: absolute;
+  display: none;
+  z-index: 9999999;
+}
+
+body > main > aside > ul > li > div > a {
+  display: block;
+  padding: 10px;
+}
+
+body > main > aside > ul > li > div > a:hover {
+  background-color: #888;
+}
+
+body > main > aside > ul > li:hover > div {
+  display: inline-block;
+  width: 20%;
+}
+
+body > main > aside > ul > li > a {
+  display: block;
+  padding: 15px;
+  text-align: center;
+}
+
+body > main > aside > ul > li > a:hover {
+  background-color: #ccc;
+}
+
+body > main > article {
+  padding: 5px;
+  width: 75%;
+}
+
+body > main > article > section {
+  text-align: justify;
+}

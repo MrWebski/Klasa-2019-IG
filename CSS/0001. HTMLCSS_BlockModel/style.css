@@ -1,0 +1,55 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+header {
+    height: 10%;
+}
+
+nav {
+    height: 10%;
+}
+
+nav > ul {
+    display: flex;
+}
+
+nav > ul > li {
+    list-style-type: none;
+    width: 10%;
+    text-align: center;
+}
+
+main {
+    display: flex;
+    height: 75%;
+}
+
+aside {
+    width: 20%;
+}
+
+main > article {
+    overflow-y: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    align-content: flex-start;
+    justify-content: center;
+    width: 60%;
+}
+
+main > article > div {
+    padding: 10px;
+    width: 25%;
+}
+
+footer {
+    height: 5%;
+}
+
