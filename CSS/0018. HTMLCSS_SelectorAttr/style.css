@@ -1,0 +1,40 @@
+@charset "UTF-8";
+a {
+  display: block;
+}
+
+a[target] {
+  color: #f00;
+}
+
+img[title="Góra"] {
+  border: 5px solid #000;
+}
+
+img[title~="Wierchy"] {
+  border: 5px dotted #f00;
+}
+
+img[title~="wierchy"] {
+  border: 5px dotted #0f0;
+}
+
+[class|="tekst"] {
+  font-weight: bold;
+}
+
+[title~="amet"] {
+  border: 1px solid #00f;
+}
+
+[id*="003"] {
+  color: cadetblue;
+}
+
+[id^="003"] {
+  border: 2px inset #0f0;
+}
+
+[id$="003"] {
+  background-color: #ccc;
+}
