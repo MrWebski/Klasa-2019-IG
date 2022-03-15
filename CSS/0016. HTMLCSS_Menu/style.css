@@ -108,10 +108,11 @@ body > main > aside > ul > li > div {
   position: absolute;
   display: none;
   z-index: 9999999;
+  width: 20%;
 }
 
 body > main > aside > ul > li > div > a {
-  display: block;
+  display: inline-block;
   padding: 10px;
 }
 
@@ -121,11 +122,10 @@ body > main > aside > ul > li > div > a:hover {
 
 body > main > aside > ul > li:hover > div {
   display: inline-block;
-  width: 20%;
 }
 
 body > main > aside > ul > li > a {
-  display: block;
+  display: inline-block;
   padding: 15px;
   text-align: center;
 }
