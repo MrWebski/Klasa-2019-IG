@@ -1,0 +1,49 @@
+@function mapIt($list, $key) {
+	@if map-has-key($list, $key) {
+		@return map-get($list, $key);
+	}
+	
+	@return null;
+}
+
+$screen-sizes: 320px, 480px, 600px, 768px, 1024px, 1200px, 1920px;
+$col-pref: (320px: hvga, 480px: wvga, 600px: svga, 768px: vga, 1024px: xvga, 1200px: wxga, 1920px: fhd);
+$col-sizes: (1: 8.33%, 2: 16.66%, 3: 25%, 4: 33.33%, 5: 41.66%, 6: 50%, 7: 58.33%, 8: 66.66%, 9: 75%, 10: 83.33%, 11: 91.66%, 12: 100%);
+
+body {
+	background-color: #fcc;
+}
+
+main {
+	width: 100%;
+	display: flex;
+	flex-flow: row wrap;
+}
+
+[class*="col-"] {
+	display: inline-block;
+}
+
+@media only print {
+	body {
+		background-color: #fff;
+	}
+
+	header, nav {
+		display: none;
+	}
+}
+
+@media only screen and (max-width: 320px) {
+    @each $name, $col in $col-sizes {
+        .col-xxs-#{$name} { width: $col; }
+    }	
+}
+
+@each $size in $screen-sizes {
+	@media only screen and (min-width: $size) {
+		@each $name, $col in $col-sizes {
+			.col-#{mapIt($col-pref, $size)}-#{$name} { width: $col; }
+		}
+	}
+}

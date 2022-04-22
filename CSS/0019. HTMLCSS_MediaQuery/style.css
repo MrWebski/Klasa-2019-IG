@@ -1,0 +1,339 @@
+body {
+  background-color: #fcc;
+}
+
+main {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+}
+
+[class*="col-"] {
+  display: inline-block;
+}
+
+@media only print {
+  body {
+    background-color: #fff;
+  }
+  header, nav {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .col-xxs-1 {
+    width: 8.33%;
+  }
+  .col-xxs-2 {
+    width: 16.66%;
+  }
+  .col-xxs-3 {
+    width: 25%;
+  }
+  .col-xxs-4 {
+    width: 33.33%;
+  }
+  .col-xxs-5 {
+    width: 41.66%;
+  }
+  .col-xxs-6 {
+    width: 50%;
+  }
+  .col-xxs-7 {
+    width: 58.33%;
+  }
+  .col-xxs-8 {
+    width: 66.66%;
+  }
+  .col-xxs-9 {
+    width: 75%;
+  }
+  .col-xxs-10 {
+    width: 83.33%;
+  }
+  .col-xxs-11 {
+    width: 91.66%;
+  }
+  .col-xxs-12 {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 320px) {
+  .col-hvga-1 {
+    width: 8.33%;
+  }
+  .col-hvga-2 {
+    width: 16.66%;
+  }
+  .col-hvga-3 {
+    width: 25%;
+  }
+  .col-hvga-4 {
+    width: 33.33%;
+  }
+  .col-hvga-5 {
+    width: 41.66%;
+  }
+  .col-hvga-6 {
+    width: 50%;
+  }
+  .col-hvga-7 {
+    width: 58.33%;
+  }
+  .col-hvga-8 {
+    width: 66.66%;
+  }
+  .col-hvga-9 {
+    width: 75%;
+  }
+  .col-hvga-10 {
+    width: 83.33%;
+  }
+  .col-hvga-11 {
+    width: 91.66%;
+  }
+  .col-hvga-12 {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 480px) {
+  .col-wvga-1 {
+    width: 8.33%;
+  }
+  .col-wvga-2 {
+    width: 16.66%;
+  }
+  .col-wvga-3 {
+    width: 25%;
+  }
+  .col-wvga-4 {
+    width: 33.33%;
+  }
+  .col-wvga-5 {
+    width: 41.66%;
+  }
+  .col-wvga-6 {
+    width: 50%;
+  }
+  .col-wvga-7 {
+    width: 58.33%;
+  }
+  .col-wvga-8 {
+    width: 66.66%;
+  }
+  .col-wvga-9 {
+    width: 75%;
+  }
+  .col-wvga-10 {
+    width: 83.33%;
+  }
+  .col-wvga-11 {
+    width: 91.66%;
+  }
+  .col-wvga-12 {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .col-svga-1 {
+    width: 8.33%;
+  }
+  .col-svga-2 {
+    width: 16.66%;
+  }
+  .col-svga-3 {
+    width: 25%;
+  }
+  .col-svga-4 {
+    width: 33.33%;
+  }
+  .col-svga-5 {
+    width: 41.66%;
+  }
+  .col-svga-6 {
+    width: 50%;
+  }
+  .col-svga-7 {
+    width: 58.33%;
+  }
+  .col-svga-8 {
+    width: 66.66%;
+  }
+  .col-svga-9 {
+    width: 75%;
+  }
+  .col-svga-10 {
+    width: 83.33%;
+  }
+  .col-svga-11 {
+    width: 91.66%;
+  }
+  .col-svga-12 {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .col-vga-1 {
+    width: 8.33%;
+  }
+  .col-vga-2 {
+    width: 16.66%;
+  }
+  .col-vga-3 {
+    width: 25%;
+  }
+  .col-vga-4 {
+    width: 33.33%;
+  }
+  .col-vga-5 {
+    width: 41.66%;
+  }
+  .col-vga-6 {
+    width: 50%;
+  }
+  .col-vga-7 {
+    width: 58.33%;
+  }
+  .col-vga-8 {
+    width: 66.66%;
+  }
+  .col-vga-9 {
+    width: 75%;
+  }
+  .col-vga-10 {
+    width: 83.33%;
+  }
+  .col-vga-11 {
+    width: 91.66%;
+  }
+  .col-vga-12 {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .col-xvga-1 {
+    width: 8.33%;
+  }
+  .col-xvga-2 {
+    width: 16.66%;
+  }
+  .col-xvga-3 {
+    width: 25%;
+  }
+  .col-xvga-4 {
+    width: 33.33%;
+  }
+  .col-xvga-5 {
+    width: 41.66%;
+  }
+  .col-xvga-6 {
+    width: 50%;
+  }
+  .col-xvga-7 {
+    width: 58.33%;
+  }
+  .col-xvga-8 {
+    width: 66.66%;
+  }
+  .col-xvga-9 {
+    width: 75%;
+  }
+  .col-xvga-10 {
+    width: 83.33%;
+  }
+  .col-xvga-11 {
+    width: 91.66%;
+  }
+  .col-xvga-12 {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .col-wxga-1 {
+    width: 8.33%;
+  }
+  .col-wxga-2 {
+    width: 16.66%;
+  }
+  .col-wxga-3 {
+    width: 25%;
+  }
+  .col-wxga-4 {
+    width: 33.33%;
+  }
+  .col-wxga-5 {
+    width: 41.66%;
+  }
+  .col-wxga-6 {
+    width: 50%;
+  }
+  .col-wxga-7 {
+    width: 58.33%;
+  }
+  .col-wxga-8 {
+    width: 66.66%;
+  }
+  .col-wxga-9 {
+    width: 75%;
+  }
+  .col-wxga-10 {
+    width: 83.33%;
+  }
+  .col-wxga-11 {
+    width: 91.66%;
+  }
+  .col-wxga-12 {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 1920px) {
+  .col-fhd-1 {
+    width: 8.33%;
+  }
+  .col-fhd-2 {
+    width: 16.66%;
+  }
+  .col-fhd-3 {
+    width: 25%;
+  }
+  .col-fhd-4 {
+    width: 33.33%;
+  }
+  .col-fhd-5 {
+    width: 41.66%;
+  }
+  .col-fhd-6 {
+    width: 50%;
+  }
+  .col-fhd-7 {
+    width: 58.33%;
+  }
+  .col-fhd-8 {
+    width: 66.66%;
+  }
+  .col-fhd-9 {
+    width: 75%;
+  }
+  .col-fhd-10 {
+    width: 83.33%;
+  }
+  .col-fhd-11 {
+    width: 91.66%;
+  }
+  .col-fhd-12 {
+    width: 100%;
+  }
+}
