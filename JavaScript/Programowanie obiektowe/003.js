@@ -26,7 +26,7 @@ class Car {
     }
 }
 
-class Model extends Car {
+class CarModel extends Car {
     constructor(brand, model, vin, regNum) {
         super(vin, regNum);
         this.brand = brand;
@@ -38,4 +38,4 @@ class Model extends Car {
     }
 }
 
-var m1 = new Model("Ford", "Fiesta", "5UXWX7C5XE0111019", "ABC 235781");
+var cm1 = new Model("Ford", "Fiesta", "5UXWX7C5XE0111019", "ABC 235781");
