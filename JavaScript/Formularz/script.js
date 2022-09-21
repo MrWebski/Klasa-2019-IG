@@ -1,4 +1,11 @@
 window.addEventListener('DOMContentLoaded', () => {
     let form = document.querySelector('#form-1');
-    console.log(form.querySelectorAll('input[type="text"]'));
+    form.addEventListener('submit', (e) => {
+        e.preventDefault();
+        let inputs = form.querySelectorAll('input[type="text"]');
+        inputs.forEach((input) => {
+            console.log(input.value);
+        });
+    });
+    let forms = document.forms;
 });

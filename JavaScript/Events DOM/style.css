@@ -1,0 +1,44 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+form {
+  display: block;
+  padding: 15px;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  width: 50vw;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  background-color: #ccc;
+  box-shadow: 0 0 15px #000;
+}
+form > div {
+  padding: 15px;
+  display: flex;
+  height: 30px;
+  line-height: 30px;
+}
+form > div > label, form > div > input {
+  display: block;
+}
+form > div > label {
+  width: 30%;
+  text-align: right;
+  font-weight: bold;
+}
+form > div > input[type=text], form > div > input[type=number] {
+  margin: auto;
+  width: 50%;
+}
+form > div > input {
+  padding: 5px;
+  border-radius: 15px;
+  border: 1px solid #aaa;
+}
+form > div:nth-child(3) > input {
+  margin: auto;
+  width: 25%;
+}
