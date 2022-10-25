@@ -1,0 +1,25 @@
+form {
+    background-color: #9C7536;
+    border: 2 piksele, pełne, #20B51B;
+    width: 50vw;
+    line-height: 20px;
+    margin: auto;
+    margin-left: 15px;
+    margin-right: 15px;
+    padding: 15px;
+    text-align: center;
+}
+input[type="number"] {
+    background-color: #EAAA42;
+    color: #361A69;
+    border: 2px solid #20B51B;
+    padding: 5px;
+    display: block;
+}
+input[type="submit"] {
+    background-color: #EAAA42;
+    color: #361A69;
+    border: 1px solid #20B51B;
+    border-radius: 15px;
+    padding: 15px;
+}

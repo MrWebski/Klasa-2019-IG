@@ -1,0 +1,94 @@
+$siteWidth: 90vw;
+$mainHeaderHeight: 10vh;
+$mainNavHeight: 5vh;
+$mainAsideWidth: 15%;
+$mainFooterHeight: 5vh;
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.mainHeader {
+    height: $mainHeaderHeight;
+    display: flex;
+    width: $siteWidth;
+    background-color: #afa;
+    margin: auto;
+    > .logo {
+        height: $mainHeaderHeight;
+        line-height: $mainHeaderHeight;
+        width: $mainHeaderHeight;
+        border: 1px solid #132;
+        text-align: center;
+        font-size: 2.5rem;
+    }
+    > h1 {
+        height: $mainHeaderHeight;
+        line-height: $mainHeaderHeight;
+        padding-left: $mainHeaderHeight;
+    }
+}
+.mainNav {
+    height: $mainNavHeight;
+    width: $siteWidth;
+    margin: auto;
+    background-color: #aaf;
+    z-index: 999;
+    ul {
+        list-style-type: none;
+    }
+    > ul {
+        display: flex;
+        > li {
+            width: 10vw;
+            &:hover {
+                > ul {
+                    display: block;
+                }
+            }
+            a {
+                display: block;
+                height: $mainNavHeight;
+                line-height: $mainNavHeight;
+                text-align: center;
+                text-decoration: none;
+                color: #132;
+                &:hover {
+                    background-color: #99e;
+                }
+            }
+            > ul {
+                display: none;
+                background-color: #aaf;
+                position: absolute;
+                width: 10vw;
+            }
+        }
+    }
+}
+main {
+    display: flex;
+    width: $siteWidth;
+    margin: auto;
+    > aside {
+        background-color: #aaf;
+        width: $mainAsideWidth;
+        ul.asideNav {
+            list-style-type: none;
+            
+        }
+    }
+    > article {
+        width: calc(100% - $mainAsideWidth);
+    }
+}
+.mainFooter {
+    width: $siteWidth;
+    margin: auto;
+    background-color: #aaf;
+    height: $mainFooterHeight;
+    line-height: $mainFooterHeight;
+    text-align: center;
+}
