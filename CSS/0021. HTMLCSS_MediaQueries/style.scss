@@ -1,0 +1,169 @@
+$strWidth: 90vw;
+$headerHeight: 10vh;
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    > header {
+        background-color: #cde;
+        height: $headerHeight;
+        width: $strWidth;
+        margin: auto;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        display: flex;
+        > h1 {
+            height: $headerHeight;
+            line-height: $headerHeight;
+        }
+    }
+    > nav {
+        background-color: #abc;
+        width: $strWidth;
+        margin: auto;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        position: sticky;
+        top: 0;
+        height: 5vh;
+        > .hamburger {
+            display: none;
+        }
+        > ul {
+            list-style-type: none;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: left;
+            justify-items: center;
+            align-items: center;
+            > li {
+                line-height: 5vh;
+                text-align: center;
+                > a {
+                    text-decoration: none;
+                    color: #123;
+                    display: block;
+                    width: 15vw;
+                    &:hover {
+                        background-color: #789;
+                    }
+                }
+            }
+        }
+    }
+    main {
+        display: flex;
+        width: $strWidth;
+        margin: auto;
+        > aside:first-child {
+            border-right: 1px solid #123;
+            border-top-left-radius: 15px;
+            border-bottom-left-radius: 15px;
+        }
+        > aside:last-child {
+            border-left: 1px solid #123;
+            border-top-right-radius: 15px;
+            border-bottom-right-radius: 15px;
+        }
+        > aside {
+            width: 15%;
+            background-color: #cde;
+            > ul {
+                list-style-type: none;
+                display: flex;
+                flex-direction: column;
+                > li {
+                    height: 5vh;
+                    line-height: 5vh;
+                    > a {
+                        padding-left: 20px;
+                        text-decoration: none;
+                        color: #123;
+                        display: block;
+                        &:hover {
+                            background-color: #789;
+                        }
+                    }
+                }
+            }
+            > div {
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+        }
+        > article {
+            width: 85%;
+            > section {
+                padding-left: 10px;
+                padding-right: 10px;
+                text-align: justify;
+                > header {
+                    background-color: #def;
+                    padding: 10px;
+                }
+                > p {
+                    text-indent: 25px;
+                    padding-top: 5px;
+                    padding-bottom: 5px;
+                }
+            }
+        }
+    }
+    > footer {
+        background-color: #abc;
+        width: $strWidth;
+        margin: auto;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        height: 5vh;
+        line-height: 5vh;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    body {
+        > nav {
+            > .hamburger {
+                display: block;
+                height: 5vh;
+                line-height: 5vh;
+                > a {
+                    display: block;
+                    text-align: center;
+                    text-decoration: none;
+                    color: #123;
+                }
+            }
+            > ul {
+                display: none;
+                flex-direction: column;
+                > li {
+                    background-color: #789;
+                    width: 90vw;
+                    > a {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+        > main {
+            flex-direction: column;
+            > aside:first-child {
+                border: 0;
+                border-radius: 0;
+            }
+            > aside:last-child {
+                border: 0;
+                border-radius: 0;
+            }    
+            > aside {
+                border: 0;
+                width: 100%;
+            }
+        }
+    }
+}

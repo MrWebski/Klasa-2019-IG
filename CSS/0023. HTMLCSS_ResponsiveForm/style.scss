@@ -1,0 +1,84 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    > aside {
+        width: 30%;
+    }
+    > article {
+        width: 70%;
+    }
+}
+
+form {
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 50%;
+    border: 1px solid #123;
+    border-radius: 15px;
+    padding: 15px;
+    background-color: #def;
+    > div {
+        display: flex;
+        flex-direction: row;
+        padding: 10px;
+        > label {
+            width: 25%;
+            text-align: right;
+        }
+        > input[type="text"] {
+            display: block;
+            width: 50%;
+            margin: auto;
+        }
+        > input[type="submit"], input[type="reset"] {
+            margin: auto;
+            display: block;
+            width: 25%;
+        }
+    }
+}
+
+@media screen and (max-width: 800px) {
+    main {
+        flex-direction: column;
+        > aside {
+            width: 100%;
+        }
+        > article {
+            width: 100%;
+        }
+    }
+    form {
+        margin: 0;
+        width: 100%;
+        border: 0;
+        border-radius: 0;
+        > div {
+            display: flex;
+            flex-direction: column;
+            padding: 10px;
+            > label {
+                width: 100%;
+                text-align: center;
+                padding: 5px;
+            }
+            > input[type="text"] {
+                width: 90%;
+                padding: 5px;
+            }
+            > input[type="submit"], input[type="reset"] {
+                width: 35%;
+            }
+            &:has(input[type="submit"]) {
+                flex-direction: row;
+            }
+        }
+    }
+}
